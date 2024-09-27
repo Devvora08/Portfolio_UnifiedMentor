@@ -1,0 +1,80 @@
+ #workSlider{
+    width: 100%;
+    background: linear-gradient(15deg, rgba(255, 241, 171, 0.684), rgba(226, 172, 251, 0.601));
+    height: 95vh;
+    overflow: hidden;
+}
+
+.projectslider{
+    width: 100%;
+    height: var(--height);
+    overflow: hidden;
+    mask-image: linear-gradient(
+        to right,
+        transparent,
+        #000 5% 95%,
+        transparent
+    );
+}
+.workingTitle{
+    font-size: 55px;
+    font-weight: 800;
+    color: rgba(38, 0, 48, 0.995);
+    margin-top: 15px;
+    text-align: center;
+}
+
+.projectslider .list{
+    display: flex;
+    width: 100%;
+    min-width: calc(var(--width) * var(--quantity));
+    position: relative;
+}
+.projectslider .list .workImg{
+    width: var(--width);
+    height: var(--height);
+    position: absolute;
+    margin-top: 10vh;
+    left: 100%;
+    animation: sliderRun 20s linear infinite;
+    transition: filter 0.5s;
+    animation-delay: calc((20s / var(--quantity)) * (var(--position) - 1) - 10s)!important;
+}
+.projectslider .list .workImg img{
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+    border-radius: 10px;
+    object-fit: cover;
+}
+@keyframes sliderRun{
+    from{
+        left: 100%;
+    }to{
+        left: calc(var(--width) * -1);
+    }
+}
+
+.projectslider:hover .workImg:not(:hover) {
+    animation-play-state: paused !important; 
+    filter: grayscale(1) blur(2px); /* Keep grayscale for non-hovered images */
+}
+
+.projectslider .workImg:hover {
+    filter: grayscale(0); /* Remove grayscale from the hovered image */
+    animation-play-state: paused !important; 
+    
+}
+
+@media screen and (max-width: 735px){
+    .projectslider .list .workImg{
+        width: 300px;
+        height: 300px;
+    }
+    .projectslider .list{
+        width: 75%;
+    }
+    #workSlider{
+        height: 80vh;
+    }
+}

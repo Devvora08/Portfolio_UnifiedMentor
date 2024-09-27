@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+.achieve {
+    background: linear-gradient(95deg, #7d92a5, #6e7d82);
+    transition: background 1s ease;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    overflow-x: hidden;
+    justify-content: center;
+}
+
+.codetable {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+   
+    margin-bottom: 20vh;
+}
+
+.codetable .codetitle {
+    position: relative;
+    left: 20%;
+    margin: 60px 20px;
+    margin-top: 80px;
+    color: rgb(0, 13, 34);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-size: 60px;
+    font-weight: 550;
+}
+
+.groups {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+    left: 0%;
+}
+
+.group {
+    display: flex;
+    flex-direction: column;
+    
+    margin: 20px 30px;
+    padding: 10px 18px;
+    background: radial-gradient(circle, rgba(66, 66, 66, 0.13), rgba(47, 52, 57, 0.223));
+    border-radius: 15px; 
+    backdrop-filter: blur(10px); 
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); 
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.heading {
+    font-size: 35px;
+    font-family: "Noto Serif", serif;
+    font-weight: 520;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+}
+
+.points {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Noto Serif", serif;
+    flex-direction: column;
+}
+
+.points ul li {
+    list-style: none;
+    color: rgba(14, 14, 14, 0.849);
+    font-size: 18px;
+    font-weight: 550;
+    margin: 10px 0;
+}
+
+.education {
+    display: flex;
+    
+    flex-direction: column;
+    border-radius: 14px;
+    margin-top: 15vh;
+    position: relative;
+    left: 10%;
+    position: absolute;
+    top: 175%;
+    height: 45vh;
+    width: 80%;
+    background-color: rgba(154, 154, 154, 0.199);
+    backdrop-filter: blur(100px);
+    
+}
+.education:hover{
+    background-color: rgba(68, 68, 68, 0.199);
+    backdrop-filter: blur(100px);
+    transition:all 0.2s ease-in-out;
+}
+.education ul li{
+    list-style: none;
+    padding-left: 50px;
+    font-family: "Noto Serif", serif;
+    font-weight: 500;
+    
+}
+.education ul{
+    padding-top: 20px;
+}
+.briefing{
+    padding: 16px;
+    margin-left: 10px;
+    font-weight: bold;
+    font-family: "Noto Serif", serif;
+}
+.achievetitle{
+    padding-left: 20px;
+    font-family: "Noto Serif", serif;
+    margin-top: 12px;
+    font-weight: bold;
+}
+
+
+.chain {
+    position: relative;
+    width: 100%;
+    height: 250px; 
+    object-fit: contain; 
+    margin: 0 auto; 
+}
+#c1{
+    right: 34%;
+    bottom: 45px;
+}
+#c2{
+    left: 35%;
+    bottom: 289px;
+}
+.chain img{
+    height: 100%;
+    width: 40%;
+    object-fit: cover;
+}
+
+.greenest{
+    background-color: rgb(89, 207, 89);
+    color: white;
+    border: 1px solid black;
+    font-weight: 300;
+    border-radius: 50%;
+    font-size: 12px;
+    padding: 4px 4px;
+    margin-left: 5px;
+}
+
+.green{
+    background-color: green;
+    color: white;
+    border: 1px solid black;
+    font-weight: 300;
+    border-radius: 50%;
+    font-size: 12px;
+    padding: 4px 4px;
+    margin-left: 5px;
+}
+.orange{
+    background-color: orange;
+    border: 1px solid black;
+    color: white;
+    font-weight: 300;
+    border-radius: 50%;
+    font-size: 12px;
+    padding: 4px 4px;
+    margin-left: 5px;
+}
+.red{
+    background-color: red;
+    border: 1px solid black;
+    color: white;
+    font-weight: 300;
+    border-radius: 50%;
+    font-size: 12px;
+    padding: 4px 4px;
+    margin-left: 5px;
+}
+.redder{
+    background-color: rgb(108, 0, 0);
+    border: 1px solid black;
+    color: white;
+    font-weight: 300;
+    border-radius: 50%;
+    font-size: 12px;
+    padding: 4px 4px;
+    margin-left: 5px;
+}
+@media screen and (max-width: 1023px) {
+    .achieve{
+        height: auto;
+        
+    }
+    .groups{
+        position: relative;
+        left: 3%;
+        margin-right: 10vh;
+        margin-left: 4vh;
+    }
+    #fourth{
+        position: relative;
+        left: 2vh;
+    }
+    .chain{
+        display: none;
+    }
+    .education{
+        position: relative;
+        height: auto;
+        top: 10px;
+        padding-right: 2vh;
+    }
+    .codetable .codetitle {
+        position: relative;
+        left: 8%;
+    }
+}
+
+@media screen and (max-width: 715px) {
+    .achieve{
+        overflow: hidden;
+    }
+    .groups{
+        position: relative;
+        left: 10%;
+        
+    }
+    .codetable .codetitle {
+        position: relative;
+        left: 5%;
+    }
+}
+
+@media screen and (max-width: 630px){
+    .group{
+        height: fit-content;
+        width: fit-content;
+        position: relative;
+        left: 12%;
+    }
+    #third{
+        position: relative;
+        left: 16%;
+    }
+    #fourth{
+        position: relative;
+        left: 13%;
+    }
+    .codetable .codetitle {
+        position: relative;
+        left: 15%;
+    }
+}
+
+
+@media screen and (min-width: 1019px) and (max-width: 1500px) {
+    .education{
+        position: relative;
+       
+    }
+    #c1,#c2{
+        display: none;
+    }
+    .group{
+        position: relative;
+        left: 10%;
+    }
+}

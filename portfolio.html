@@ -4,14 +4,173 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="CSS/openingCarousal.css">
+    <link rel="stylesheet" href="CSS/achieveSection.css">
+    <link rel="stylesheet" href="CSS/projectSlider.css">
+    <style>
+        html,
+        body {
+            overflow-x: hidden;
+        }
+    </style>
     <title>Document</title>
 </head>
 
 <body>
-    <section class="elemetal">
-        <div class="opener">
-            <img src="center.png" alt="">
+    <div class="banner"">
+        <div class=" slider" style="--quantity: 9">
+        <div class="item" style="--position: 1"><img src="sliderPhotos/img1.png" alt=""></div>
+        <div class="item" style="--position: 2"><img src="sliderPhotos/img2.png" alt=""></div>
+        <div class="item" style="--position: 3"><img src="sliderPhotos/img3.png" alt=""></div>
+        <div class="item" style="--position: 4"><img src="sliderPhotos/img4.png" alt=""></div>
+        <div class="item" style="--position: 5"><img src="sliderPhotos/img5.png" alt=""></div>
+        <div class="item" style="--position: 6"><img src="sliderPhotos/img6.png" alt=""></div>
+        <div class="item" style="--position: 7"><img src="sliderPhotos/img7.png" alt=""></div>
+        <div class="item" style="--position: 8"><img src="sliderPhotos/img8.png" alt=""></div>
+        <div class="item" style="--position: 9"><img src="sliderPhotos/img9.png" alt=""></div>
+    </div>
+    <div class="content">
+        <h1 data-content="WELCOME">
+            WELCOME
+        </h1>
+        <div class="author">
+
+            <p><b style="font-size: 30px;">Web Design</b></p>
+            <p>
+                A Project Portfolio For Unified-Mentor Internship
+            </p>
+        </div>
+        <div class="model"></div>
+    </div>
+    </div>
+    <!-- <br><br><br> -->
+    <section class="achieve">
+        <div class="codetable">
+            <div class="codetitle">BEHIND THE CODE</div>
+            <div class="groups">
+                <div class="group" id="first">
+                    <div class="heading">Front-End</div>
+                    <div class="points">
+                        <ul>
+                            <li>HTML <span class="greenest">90%</span></li>
+                            <li>CSS <span class="green">80%</span></li>
+                            <li>Javascript <span class="greenest">85%</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="group" id="second">
+                    <div class="heading">Back-End</div>
+                    <div class="points">
+                        <ul>
+                            <li>Node JS <span class="green">65%</span></li>
+                            <li>Express JS <span class="orange">40%</span></li>
+                            <li>MongoDB <span class="orange">40%</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="group" id="third">
+                    <div class="heading">Tools</div>
+                    <div class="points">
+                        <ul>
+                            <li>Bootstrap <span class="orange">60%</span></li>
+                            <li>JQuery <span class="redder">10%</span></li>
+                            <li>React <span class="red">30%</span></li>
+                            <li>Leaflet JS <span class="green">70%</span></li>
+                            <li>GitHub <span class="redder">20%</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="group" id="fourth">
+                    <div class="heading">Creative</div>
+                    <div class="points">
+                        <ul>
+                            <li>Photoshop <span class="red">25%</span></li>
+                            <li>Blender <span class="redder">5%</span></li>
+                            <li>Unity-Engine <span class="redder">10%</span></li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <img class="chain" id="c1" src="chain.png" alt="">
+            <img class="chain" id="c2" src="chain.png" alt="">
+            <div class="education">
+                <div class="study">
+                    <div class="achievetitle">Education</div>
+                    <div class="content">
+                        <ul>
+                            <li>
+                                1 - 12th - S.N.Kansagra [<span>2004 - 2021</span> <span>85%</span> ]
+                            </li>
+                            <li>
+                                BCA - Computer Sciences - Manipal University [ <span>2022 - 2025</span> <span>SGPA -
+                                    8</span> ]
+                            </li>
+                            <li>
+                                BBA - Business and Economics - Amity University [ <span>2023 - 2026</span> <span>SGPA -
+                                    8.2</span> ]
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="workshop">
+                    <div class="achievetitle">Workshops and Certificates</div>
+                    <div class="content">
+                        <ul>
+                            <li>Google cloud Workshop - 2023</li>
+                            <li>Adobe Photoshop Workshop - 2024</li>
+                            <li>C# - language course - 2024</li>
+                            <li>Data Structures and Algorithms Course - 2024</li>
+                            <li>Unified Mentor Internship - Aug - Nov 2024</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="briefing">"Pursuing BCA in Computer Science and BBA in Economics, with hands-on experience
+                    from workshops,
+                    certifications, and an internship at Unified Mentor, developing versatile technical skills."</div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="workSlider">
+        <div class="workingTitle">My Projects</div>
+        <div class="projectslider" style="
+            --width: 600px;
+            --height: 600px;
+            --quantity: 7;
+            margin-bottom: 45%;
+        ">
+            <div class="list">
+                <div class="workImg" style="--position: 1">
+                    <img src="workSliderPhotos/img1.png" alt="">
+
+                </div>
+                <div class="workImg" style="--position: 2">
+                    <img src="workSliderPhotos/img2.png" alt="">
+
+                </div>
+                <div class="workImg" style="--position: 3">
+                    <img src="workSliderPhotos/img3.png" alt="">
+
+                </div>
+                <div class="workImg" style="--position: 4">
+                    <img src="workSliderPhotos/img4.png" alt="">
+
+                </div>
+                <div class="workImg" style="--position: 5">
+                    <img src="workSliderPhotos/img5.png" alt="">
+
+                </div>
+                <div class="workImg" style="--position: 6">
+                    <img src="workSliderPhotos/img6.png" alt="">
+
+                </div>
+                <div class="workImg" style="--position: 7">
+                    <img src="workSliderPhotos/img7.png" alt="">
+
+                </div>
+            </div>
         </div>
     </section>
 </body>
