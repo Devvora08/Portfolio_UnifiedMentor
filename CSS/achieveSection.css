@@ -2,7 +2,7 @@
 
 
 .achieve {
-    background: linear-gradient(95deg, #7d92a5, #6e7d82);
+    background-image: radial-gradient(circle, #f3f7a4, #fffcdca8, rgb(134, 135, 108));
     transition: background 1s ease;
     display: flex;
     flex-wrap: wrap;
@@ -269,6 +269,6 @@
     }
     .group{
         position: relative;
-        left: 10%;
+        left: 4%;
     }
 }
